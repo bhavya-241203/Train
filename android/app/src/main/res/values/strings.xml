@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">DoneRight</string>
+    <string name="title_activity_main">DoneRight</string>
+    <string name="package_name">app.doneright.trainer</string>
+    <string name="custom_url_scheme">app.doneright.trainer</string>
+</resources>
