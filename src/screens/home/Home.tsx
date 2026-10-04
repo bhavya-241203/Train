@@ -101,6 +101,13 @@ export default function Home() {
 
       <PlanCard dayPlan={dayPlan} session={session} run={run} onStartWorkout={() => navigate('/workout')} onStartRun={() => navigate('/run')} />
 
+      <button
+        onClick={() => navigate('/settings/split')}
+        className="w-full text-center text-xs text-[var(--color-ink-faint)] underline mt-3"
+      >
+        View my full week's split
+      </button>
+
       {!hasCheckedIn && (
         <Button fullWidth size="xl" className="mt-5" onClick={() => navigate('/checkin')}>
           End-of-day check-in

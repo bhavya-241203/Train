@@ -33,6 +33,14 @@ export default function Settings() {
         </button>
       </div>
 
+      <Card className="mb-4 flex items-center justify-between" onClick={() => navigate('/settings/split')}>
+        <div>
+          <Label>Weekly split</Label>
+          <p className="text-sm text-[var(--color-ink)]">{profile.daysPerWeek} days/week — view full schedule</p>
+        </div>
+        <span className="text-[var(--color-ink-faint)]">›</span>
+      </Card>
+
       <Card className="mb-4">
         <Label>Daily step goal</Label>
         <Stepper value={profile.stepGoal} onChange={(v) => update({ stepGoal: v })} step={500} min={3000} max={20000} unit="steps" size="md" />

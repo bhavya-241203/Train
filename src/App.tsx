@@ -18,6 +18,7 @@ import CheckIn from './screens/checkin/CheckIn'
 import Dashboard from './screens/dashboard/Dashboard'
 import Badges from './screens/badges/Badges'
 import Settings from './screens/settings/Settings'
+import MySplit from './screens/settings/MySplit'
 
 const NAV_HIDDEN_PREFIXES = ['/onboarding', '/run/active', '/workout']
 
@@ -56,6 +57,7 @@ function AppShell() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/badges" element={<Badges />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/settings/split" element={<MySplit />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
